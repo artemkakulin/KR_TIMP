@@ -1,0 +1,91 @@
+\doxysection{Класс My\+Test\+Reporter}
+\hypertarget{class_my_test_reporter}{}\label{class_my_test_reporter}\index{MyTestReporter@{MyTestReporter}}
+
+
+Класс логгера для вывода детализированной информации о тестах.  
+
+
+Граф наследования:\+My\+Test\+Reporter:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_my_test_reporter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_my_test_reporter_ae39f71f494012705153f78315b3573fe}{Report\+Test\+Start}} (Unit\+Test::\+\+Test\+Details const \&test) override
+\begin{DoxyCompactList}\small\item\em Сообщает о начале выполнения теста. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_my_test_reporter_af2dcbfb68390fc2e8889dafdc4ff2a1a}{Report\+Test\+Finish}} (Unit\+Test::\+\+Test\+Details const \&test, float seconds\+Elapsed) override
+\begin{DoxyCompactList}\small\item\em Сообщает об окончании выполнения теста. \end{DoxyCompactList}\item 
+\Hypertarget{class_my_test_reporter_a8f085d22a9f8709a2f44df9a66447eae}\label{class_my_test_reporter_a8f085d22a9f8709a2f44df9a66447eae} 
+void {\bfseries Report\+Failure} (Unit\+Test::\+\+Test\+Details const \&test, char const \texorpdfstring{$\ast$}{*}failure) override
+\item 
+void \doxymbox{\hyperlink{class_my_test_reporter_a01c34b19509cbb7b384fdda86718fc30}{Report\+Summary}} (int total\+Test\+Count, int failed\+Test\+Count, int failure\+Count, float seconds\+Elapsed) override
+\begin{DoxyCompactList}\small\item\em Сообщает об общей сводке выполнения тестов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс логгера для вывода детализированной информации о тестах. 
+
+\label{class_my_test_reporter_doc-func-members}
+\Hypertarget{class_my_test_reporter_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_my_test_reporter_a01c34b19509cbb7b384fdda86718fc30}\index{MyTestReporter@{MyTestReporter}!ReportSummary@{ReportSummary}}
+\index{ReportSummary@{ReportSummary}!MyTestReporter@{MyTestReporter}}
+\doxysubsubsection{\texorpdfstring{ReportSummary()}{ReportSummary()}}
+{\footnotesize\ttfamily \label{class_my_test_reporter_a01c34b19509cbb7b384fdda86718fc30} 
+void My\+Test\+Reporter::\+\+Report\+Summary (\begin{DoxyParamCaption}\item[{int}]{total\+Test\+Count}{, }\item[{int}]{failed\+Test\+Count}{, }\item[{int}]{failure\+Count}{, }\item[{float}]{seconds\+Elapsed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Сообщает об общей сводке выполнения тестов. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em total\+Test\+Count} & Общее количество тестов. \\
+\hline
+{\em failed\+Test\+Count} & Количество неудачных тестов. \\
+\hline
+{\em failure\+Count} & Общее количество сбоев. \\
+\hline
+{\em seconds\+Elapsed} & Общее время выполнения тестов в секундах. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_my_test_reporter_af2dcbfb68390fc2e8889dafdc4ff2a1a}\index{MyTestReporter@{MyTestReporter}!ReportTestFinish@{ReportTestFinish}}
+\index{ReportTestFinish@{ReportTestFinish}!MyTestReporter@{MyTestReporter}}
+\doxysubsubsection{\texorpdfstring{ReportTestFinish()}{ReportTestFinish()}}
+{\footnotesize\ttfamily \label{class_my_test_reporter_af2dcbfb68390fc2e8889dafdc4ff2a1a} 
+void My\+Test\+Reporter::\+\+Report\+Test\+Finish (\begin{DoxyParamCaption}\item[{Unit\+Test::\+\+Test\+Details const \&}]{test}{, }\item[{float}]{seconds\+Elapsed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Сообщает об окончании выполнения теста. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em test} & Детали теста. \\
+\hline
+{\em seconds\+Elapsed} & Время выполнения теста в секундах. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_my_test_reporter_ae39f71f494012705153f78315b3573fe}\index{MyTestReporter@{MyTestReporter}!ReportTestStart@{ReportTestStart}}
+\index{ReportTestStart@{ReportTestStart}!MyTestReporter@{MyTestReporter}}
+\doxysubsubsection{\texorpdfstring{ReportTestStart()}{ReportTestStart()}}
+{\footnotesize\ttfamily \label{class_my_test_reporter_ae39f71f494012705153f78315b3573fe} 
+void My\+Test\+Reporter::\+\+Report\+Test\+Start (\begin{DoxyParamCaption}\item[{Unit\+Test::\+\+Test\+Details const \&}]{test}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Сообщает о начале выполнения теста. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em test} & Детали теста. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле:\+\begin{DoxyCompactItemize}
+\item 
+unit/\+source/\+main.\+cpp\end{DoxyCompactItemize}

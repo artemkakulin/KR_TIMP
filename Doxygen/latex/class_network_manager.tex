@@ -1,0 +1,44 @@
+\doxysection{Класс Network\+Manager}
+\hypertarget{class_network_manager}{}\label{class_network_manager}\index{NetworkManager@{NetworkManager}}
+
+
+Класс для управления сетевым подключением и взаимодействием.  
+
+
+
+
+{\ttfamily \+\#include $<$network.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_network_manager_a730b351e724ecaad7e167f2baa8321cf}\label{class_network_manager_a730b351e724ecaad7e167f2baa8321cf} 
+{\bfseries Network\+Manager} (const std::\+string \&address, uint16\+\_\+t port)
+\item 
+\Hypertarget{class_network_manager_ae2f80b0ce27aeaac1319208d53545d60}\label{class_network_manager_ae2f80b0ce27aeaac1319208d53545d60} 
+std::\+string \& {\bfseries get\+Address} ()
+\item 
+\Hypertarget{class_network_manager_aaa83cea0dd364c6b50fe53b47a470b45}\label{class_network_manager_aaa83cea0dd364c6b50fe53b47a470b45} 
+uint16\+\_\+t \& {\bfseries get\+Port} ()
+\item 
+\Hypertarget{class_network_manager_afd4d6919e26a38a4b4aa28b655249aa6}\label{class_network_manager_afd4d6919e26a38a4b4aa28b655249aa6} 
+void {\bfseries conn} ()
+\item 
+\Hypertarget{class_network_manager_ab45985a4f06a98860d6f25911de5d36b}\label{class_network_manager_ab45985a4f06a98860d6f25911de5d36b} 
+void {\bfseries auth} (const std::\+string \&username, const std::\+string \&password)
+\item 
+\Hypertarget{class_network_manager_a44287bc22d62dc5320ca94ee3887a4cd}\label{class_network_manager_a44287bc22d62dc5320ca94ee3887a4cd} 
+std::\+vector$<$ uint64\+\_\+t $>$ {\bfseries calc} (const std::\+vector$<$ std::\+vector$<$ uint64\+\_\+t $>$ $>$ \&data)
+\item 
+\Hypertarget{class_network_manager_a20675a8cc89ecc69aedc8bc03085df69}\label{class_network_manager_a20675a8cc89ecc69aedc8bc03085df69} 
+void {\bfseries close} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления сетевым подключением и взаимодействием. 
+
+Объявления и описания членов классов находятся в файлах:\+\begin{DoxyCompactItemize}
+\item 
+client/\+source/\+modules/\+\doxymbox{\hyperlink{network_8h}{network.\+h}}\item 
+client/\+source/\+modules/\+network.\+cpp\end{DoxyCompactItemize}

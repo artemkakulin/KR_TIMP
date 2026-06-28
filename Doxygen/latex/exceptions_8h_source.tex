@@ -1,0 +1,56 @@
+\doxysection{exceptions.\+h}
+\hypertarget{exceptions_8h_source}{}\label{exceptions_8h_source}\index{client/source/modules/exceptions.h@{client/source/modules/exceptions.h}}
+\doxymbox{\hyperlink{exceptions_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ERRORS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ERRORS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{BasicClientException}}\ :\ \textcolor{keyword}{public}\ std::exception}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{BasicClientException}}(\textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a8128400e1ec5baba05248f560a619a12}{name}},\ \textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b}{message}},\ \textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c}{func}});}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\doxymbox{\hyperlink{class_basic_client_exception_a486e7442612412aa6a5a208b7d47770d}{what}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00037\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_basic_client_exception_a8128400e1ec5baba05248f560a619a12}{name}};\ \ }
+\DoxyCodeLine{00038\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c}{func}};\ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{mutable}\ std::string\ \doxymbox{\hyperlink{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b}{message}};\ \ }
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_input_output_exception_abb2baca025d73aeb1fd66c9ece2961e4}{InputOutputException}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{BasicClientException}}}
+\DoxyCodeLine{00046\ \{}
+\DoxyCodeLine{00047\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ \ \ \ \ \doxymbox{\hyperlink{class_input_output_exception_abb2baca025d73aeb1fd66c9ece2961e4}{InputOutputException}}(\textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b}{message}},\ \textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c}{func}});}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_args_decode_exception_ac602a3a3471a55ffe5b871ac8c5cc245}{ArgsDecodeException}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{BasicClientException}}}
+\DoxyCodeLine{00060\ \{}
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00067\ \ \ \ \ \doxymbox{\hyperlink{class_args_decode_exception_ac602a3a3471a55ffe5b871ac8c5cc245}{ArgsDecodeException}}(\textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b}{message}},\ \textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c}{func}});}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_data_decode_exception_a18f70acf7f4e91426f8f3d27e18b2058}{DataDecodeException}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{BasicClientException}}}
+\DoxyCodeLine{00074\ \{}
+\DoxyCodeLine{00075\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00081\ \ \ \ \ \doxymbox{\hyperlink{class_data_decode_exception_a18f70acf7f4e91426f8f3d27e18b2058}{DataDecodeException}}(\textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b}{message}},\ \textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c}{func}});}
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_auth_exception_a38a102f57e68def203241dfdbe229877}{AuthException}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{BasicClientException}}}
+\DoxyCodeLine{00088\ \{}
+\DoxyCodeLine{00089\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \ \ \doxymbox{\hyperlink{class_auth_exception_a38a102f57e68def203241dfdbe229877}{AuthException}}(\textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b}{message}},\ \textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c}{func}});}
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_network_exception_ac24c3bfc322544c93728b3bc2e3e406d}{NetworkException}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{BasicClientException}}}
+\DoxyCodeLine{00102\ \{}
+\DoxyCodeLine{00103\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00109\ \ \ \ \ \doxymbox{\hyperlink{class_network_exception_ac24c3bfc322544c93728b3bc2e3e406d}{NetworkException}}(\textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b}{message}},\ \textcolor{keyword}{const}\ std::string\ \&\doxymbox{\hyperlink{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c}{func}});}
+\DoxyCodeLine{00110\ \};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ERRORS\_H}}
+
+\end{DoxyCode}

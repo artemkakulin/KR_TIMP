@@ -1,0 +1,70 @@
+\doxysection{Класс Auth\+Exception}
+\hypertarget{class_auth_exception}{}\label{class_auth_exception}\index{AuthException@{AuthException}}
+
+
+Исключение для ошибок аутентификации.  
+
+
+
+
+{\ttfamily \+\#include $<$exceptions.\+h$>$}
+
+Граф наследования:\+Auth\+Exception:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_auth_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_auth_exception_a38a102f57e68def203241dfdbe229877}{Auth\+Exception}} (const std::\+string \&message, const std::\+string \&func)
+\begin{DoxyCompactList}\small\item\em Конструктор \doxylink{class_auth_exception}{Auth\+Exception}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \doxymbox{\hyperlink{class_basic_client_exception}{Basic\+Client\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{Basic\+Client\+Exception}} (const std::\+string \&name, const std::\+string \&message, const std::\+string \&func)
+\begin{DoxyCompactList}\small\item\em Конструктор \doxylink{class_basic_client_exception}{Basic\+Client\+Exception}. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_basic_client_exception_a486e7442612412aa6a5a208b7d47770d}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Метод для получения сообщения об ошибке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \doxymbox{\hyperlink{class_basic_client_exception}{Basic\+Client\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+std::\+string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Имя исключения. \end{DoxyCompactList}\item 
+std::\+string {\bfseries func}
+\begin{DoxyCompactList}\small\item\em Имя функции, в которой возникла ошибка. \end{DoxyCompactList}\item 
+std::\+string {\bfseries message}
+\begin{DoxyCompactList}\small\item\em Сообщение об ошибке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Исключение для ошибок аутентификации. 
+
+\label{class_auth_exception_doc-constructors}
+\Hypertarget{class_auth_exception_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_auth_exception_a38a102f57e68def203241dfdbe229877}\index{AuthException@{AuthException}!AuthException@{AuthException}}
+\index{AuthException@{AuthException}!AuthException@{AuthException}}
+\doxysubsubsection{\texorpdfstring{AuthException()}{AuthException()}}
+{\footnotesize\ttfamily \label{class_auth_exception_a38a102f57e68def203241dfdbe229877} 
+Auth\+Exception::\+\+Auth\+Exception (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{message}{, }\item[{const std::\+string \&}]{func}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор \doxylink{class_auth_exception}{Auth\+Exception}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение об ошибке. \\
+\hline
+{\em func} & Имя функции, в которой возникла ошибка. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах:\+\begin{DoxyCompactItemize}
+\item 
+client/\+source/\+modules/\+\doxymbox{\hyperlink{exceptions_8h}{exceptions.\+h}}\item 
+client/\+source/\+modules/\+exceptions.\+cpp\end{DoxyCompactItemize}

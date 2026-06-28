@@ -1,0 +1,87 @@
+\doxysection{Класс Basic\+Client\+Exception}
+\hypertarget{class_basic_client_exception}{}\label{class_basic_client_exception}\index{BasicClientException@{BasicClientException}}
+
+
+Базовый класс для клиентских ошибок.  
+
+
+
+
+{\ttfamily \+\#include $<$exceptions.\+h$>$}
+
+Граф наследования:\+Basic\+Client\+Exception:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.301370cm]{class_basic_client_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}{Basic\+Client\+Exception}} (const std::\+string \&name, const std::\+string \&message, const std::\+string \&func)
+\begin{DoxyCompactList}\small\item\em Конструктор \doxylink{class_basic_client_exception}{Basic\+Client\+Exception}. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_basic_client_exception_a486e7442612412aa6a5a208b7d47770d}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Метод для получения сообщения об ошибке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_basic_client_exception_a8128400e1ec5baba05248f560a619a12}\label{class_basic_client_exception_a8128400e1ec5baba05248f560a619a12} 
+std::\+string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Имя исключения. \end{DoxyCompactList}\item 
+\Hypertarget{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c}\label{class_basic_client_exception_a1e98a03e08561a48c9d5d6af11efe52c} 
+std::\+string {\bfseries func}
+\begin{DoxyCompactList}\small\item\em Имя функции, в которой возникла ошибка. \end{DoxyCompactList}\item 
+\Hypertarget{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b}\label{class_basic_client_exception_a1722e0424a12c0e6971deb9b69a0891b} 
+std::\+string {\bfseries message}
+\begin{DoxyCompactList}\small\item\em Сообщение об ошибке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Базовый класс для клиентских ошибок. 
+
+\label{class_basic_client_exception_doc-constructors}
+\Hypertarget{class_basic_client_exception_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_basic_client_exception_a88694b6de21710d105a7cea530edd139}\index{BasicClientException@{BasicClientException}!BasicClientException@{BasicClientException}}
+\index{BasicClientException@{BasicClientException}!BasicClientException@{BasicClientException}}
+\doxysubsubsection{\texorpdfstring{BasicClientException()}{BasicClientException()}}
+{\footnotesize\ttfamily \label{class_basic_client_exception_a88694b6de21710d105a7cea530edd139} 
+Basic\+Client\+Exception::\+\+Basic\+Client\+Exception (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{const std::\+string \&}]{message}{, }\item[{const std::\+string \&}]{func}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор \doxylink{class_basic_client_exception}{Basic\+Client\+Exception}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя исключения. \\
+\hline
+{\em message} & Сообщение об ошибке. \\
+\hline
+{\em func} & Имя функции, в которой возникла ошибка. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_basic_client_exception_doc-func-members}
+\Hypertarget{class_basic_client_exception_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_basic_client_exception_a486e7442612412aa6a5a208b7d47770d}\index{BasicClientException@{BasicClientException}!what@{what}}
+\index{what@{what}!BasicClientException@{BasicClientException}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily \label{class_basic_client_exception_a486e7442612412aa6a5a208b7d47770d} 
+const char \texorpdfstring{$\ast$}{*} Basic\+Client\+Exception::\+what (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Метод для получения сообщения об ошибке. 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах:\+\begin{DoxyCompactItemize}
+\item 
+client/\+source/\+modules/\+\doxymbox{\hyperlink{exceptions_8h}{exceptions.\+h}}\item 
+client/\+source/\+modules/\+exceptions.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Клиент ТИМП Какулин: Исходный файл client/source/modules/exceptions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Клиент ТИМП Какулин
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('exceptions_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">exceptions.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="exceptions_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ERRORS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ERRORS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_basic_client_exception.html">   19</a></span><span class="keyword">class </span><a class="code hl_function" href="class_basic_client_exception.html#a88694b6de21710d105a7cea530edd139">BasicClientException</a> : <span class="keyword">public</span> std::exception</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_basic_client_exception.html#a88694b6de21710d105a7cea530edd139">BasicClientException</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a8128400e1ec5baba05248f560a619a12">name</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">func</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="class_basic_client_exception.html#a486e7442612412aa6a5a208b7d47770d">what</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_basic_client_exception.html#a8128400e1ec5baba05248f560a619a12">   37</a></span>    std::string <a class="code hl_variable" href="class_basic_client_exception.html#a8128400e1ec5baba05248f560a619a12">name</a>;  </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">   38</a></span>    std::string <a class="code hl_variable" href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">func</a>;  </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">   39</a></span>    <span class="keyword">mutable</span> std::string <a class="code hl_variable" href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">message</a>;  </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_input_output_exception.html">   45</a></span><span class="keyword">class </span><a class="code hl_function" href="class_input_output_exception.html#abb2baca025d73aeb1fd66c9ece2961e4">InputOutputException</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_basic_client_exception.html#a88694b6de21710d105a7cea530edd139">BasicClientException</a></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_function" href="class_input_output_exception.html#abb2baca025d73aeb1fd66c9ece2961e4">InputOutputException</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">func</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="};">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_args_decode_exception.html">   59</a></span><span class="keyword">class </span><a class="code hl_function" href="class_args_decode_exception.html#ac602a3a3471a55ffe5b871ac8c5cc245">ArgsDecodeException</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_basic_client_exception.html#a88694b6de21710d105a7cea530edd139">BasicClientException</a></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="class_args_decode_exception.html#ac602a3a3471a55ffe5b871ac8c5cc245">ArgsDecodeException</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">func</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="};">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_data_decode_exception.html">   73</a></span><span class="keyword">class </span><a class="code hl_function" href="class_data_decode_exception.html#a18f70acf7f4e91426f8f3d27e18b2058">DataDecodeException</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_basic_client_exception.html#a88694b6de21710d105a7cea530edd139">BasicClientException</a></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="class_data_decode_exception.html#a18f70acf7f4e91426f8f3d27e18b2058">DataDecodeException</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">func</a>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span></div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="};">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_auth_exception.html">   87</a></span><span class="keyword">class </span><a class="code hl_function" href="class_auth_exception.html#a38a102f57e68def203241dfdbe229877">AuthException</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_basic_client_exception.html#a88694b6de21710d105a7cea530edd139">BasicClientException</a></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_function" href="class_auth_exception.html#a38a102f57e68def203241dfdbe229877">AuthException</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">func</a>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="};">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_network_exception.html">  101</a></span><span class="keyword">class </span><a class="code hl_function" href="class_network_exception.html#ac24c3bfc322544c93728b3bc2e3e406d">NetworkException</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_basic_client_exception.html#a88694b6de21710d105a7cea530edd139">BasicClientException</a></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_function" href="class_network_exception.html#ac24c3bfc322544c93728b3bc2e3e406d">NetworkException</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">func</a>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif </span><span class="comment">// ERRORS_H</span></div>
+<div class="ttc" id="aclass_args_decode_exception_html_ac602a3a3471a55ffe5b871ac8c5cc245"><div class="ttname"><a href="class_args_decode_exception.html#ac602a3a3471a55ffe5b871ac8c5cc245">ArgsDecodeException::ArgsDecodeException</a></div><div class="ttdeci">ArgsDecodeException(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор ArgsDecodeException.</div><div class="ttdef"><b>Определения</b> exceptions.cpp:19</div></div>
+<div class="ttc" id="aclass_auth_exception_html_a38a102f57e68def203241dfdbe229877"><div class="ttname"><a href="class_auth_exception.html#a38a102f57e68def203241dfdbe229877">AuthException::AuthException</a></div><div class="ttdeci">AuthException(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор AuthException.</div><div class="ttdef"><b>Определения</b> exceptions.cpp:25</div></div>
+<div class="ttc" id="aclass_basic_client_exception_html_a1722e0424a12c0e6971deb9b69a0891b"><div class="ttname"><a href="class_basic_client_exception.html#a1722e0424a12c0e6971deb9b69a0891b">BasicClientException::message</a></div><div class="ttdeci">std::string message</div><div class="ttdoc">Сообщение об ошибке.</div><div class="ttdef"><b>Определения</b> exceptions.h:39</div></div>
+<div class="ttc" id="aclass_basic_client_exception_html_a1e98a03e08561a48c9d5d6af11efe52c"><div class="ttname"><a href="class_basic_client_exception.html#a1e98a03e08561a48c9d5d6af11efe52c">BasicClientException::func</a></div><div class="ttdeci">std::string func</div><div class="ttdoc">Имя функции, в которой возникла ошибка.</div><div class="ttdef"><b>Определения</b> exceptions.h:38</div></div>
+<div class="ttc" id="aclass_basic_client_exception_html_a486e7442612412aa6a5a208b7d47770d"><div class="ttname"><a href="class_basic_client_exception.html#a486e7442612412aa6a5a208b7d47770d">BasicClientException::what</a></div><div class="ttdeci">const char * what() const noexcept override</div><div class="ttdoc">Метод для получения сообщения об ошибке.</div><div class="ttdef"><b>Определения</b> exceptions.cpp:10</div></div>
+<div class="ttc" id="aclass_basic_client_exception_html_a8128400e1ec5baba05248f560a619a12"><div class="ttname"><a href="class_basic_client_exception.html#a8128400e1ec5baba05248f560a619a12">BasicClientException::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">Имя исключения.</div><div class="ttdef"><b>Определения</b> exceptions.h:37</div></div>
+<div class="ttc" id="aclass_basic_client_exception_html_a88694b6de21710d105a7cea530edd139"><div class="ttname"><a href="class_basic_client_exception.html#a88694b6de21710d105a7cea530edd139">BasicClientException::BasicClientException</a></div><div class="ttdeci">BasicClientException(const std::string &amp;name, const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор BasicClientException.</div><div class="ttdef"><b>Определения</b> exceptions.cpp:4</div></div>
+<div class="ttc" id="aclass_data_decode_exception_html_a18f70acf7f4e91426f8f3d27e18b2058"><div class="ttname"><a href="class_data_decode_exception.html#a18f70acf7f4e91426f8f3d27e18b2058">DataDecodeException::DataDecodeException</a></div><div class="ttdeci">DataDecodeException(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор DataDecodeException.</div><div class="ttdef"><b>Определения</b> exceptions.cpp:22</div></div>
+<div class="ttc" id="aclass_input_output_exception_html_abb2baca025d73aeb1fd66c9ece2961e4"><div class="ttname"><a href="class_input_output_exception.html#abb2baca025d73aeb1fd66c9ece2961e4">InputOutputException::InputOutputException</a></div><div class="ttdeci">InputOutputException(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор InputOutputException.</div><div class="ttdef"><b>Определения</b> exceptions.cpp:16</div></div>
+<div class="ttc" id="aclass_network_exception_html_ac24c3bfc322544c93728b3bc2e3e406d"><div class="ttname"><a href="class_network_exception.html#ac24c3bfc322544c93728b3bc2e3e406d">NetworkException::NetworkException</a></div><div class="ttdeci">NetworkException(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор NetworkException.</div><div class="ttdef"><b>Определения</b> exceptions.cpp:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>client</b></li><li class="navelem"><b>source</b></li><li class="navelem"><b>modules</b></li><li class="navelem"><a href="exceptions_8h.html">exceptions.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+\begin{theindex}
+
+  \item {ArgsDecodeException}, \hyperpage{7}
+    \subitem {ArgsDecodeException}, \hyperpage{8}
+  \item {AuthException}, \hyperpage{8}
+    \subitem {AuthException}, \hyperpage{9}
+
+  \indexspace
+
+  \item {BasicClientException}, \hyperpage{10}
+    \subitem {BasicClientException}, \hyperpage{10}
+    \subitem {what}, \hyperpage{11}
+
+  \indexspace
+
+  \item {client/source/main.cpp}, \hyperpage{21}
+  \item {client/source/modules/exceptions.h}, \hyperpage{22, 23}
+  \item {client/source/modules/io.h}, \hyperpage{24}
+  \item {client/source/modules/network.h}, \hyperpage{25, 26}
+  \item {client/source/modules/ui.h}, \hyperpage{26, 27}
+
+  \indexspace
+
+  \item {DataDecodeException}, \hyperpage{11}
+    \subitem {DataDecodeException}, \hyperpage{12}
+
+  \indexspace
+
+  \item {getAddress}
+    \subitem {UserInterface}, \hyperpage{19}
+  \item {getConfigFilePath}
+    \subitem {UserInterface}, \hyperpage{19}
+  \item {getInputFilePath}
+    \subitem {UserInterface}, \hyperpage{19}
+  \item {getOutputFilePath}
+    \subitem {UserInterface}, \hyperpage{19}
+  \item {getPort}
+    \subitem {UserInterface}, \hyperpage{19}
+
+  \indexspace
+
+  \item {InputOutputException}, \hyperpage{13}
+    \subitem {InputOutputException}, \hyperpage{14}
+  \item {InputOutputManager}, \hyperpage{14}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{22}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{22}
+  \item {MyTestReporter}, \hyperpage{14}
+    \subitem {ReportSummary}, \hyperpage{15}
+    \subitem {ReportTestFinish}, \hyperpage{15}
+    \subitem {ReportTestStart}, \hyperpage{15}
+
+  \indexspace
+
+  \item {NetworkException}, \hyperpage{16}
+    \subitem {NetworkException}, \hyperpage{17}
+  \item {NetworkManager}, \hyperpage{17}
+
+  \indexspace
+
+  \item {ReportSummary}
+    \subitem {MyTestReporter}, \hyperpage{15}
+  \item {ReportTestFinish}
+    \subitem {MyTestReporter}, \hyperpage{15}
+  \item {ReportTestStart}
+    \subitem {MyTestReporter}, \hyperpage{15}
+
+  \indexspace
+
+  \item {UserInterface}, \hyperpage{18}
+    \subitem {getAddress}, \hyperpage{19}
+    \subitem {getConfigFilePath}, \hyperpage{19}
+    \subitem {getInputFilePath}, \hyperpage{19}
+    \subitem {getOutputFilePath}, \hyperpage{19}
+    \subitem {getPort}, \hyperpage{19}
+    \subitem {UserInterface}, \hyperpage{18}
+
+  \indexspace
+
+  \item {what}
+    \subitem {BasicClientException}, \hyperpage{11}
+
+\end{theindex}

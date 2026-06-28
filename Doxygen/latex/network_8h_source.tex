@@ -1,0 +1,36 @@
+\doxysection{network.\+h}
+\hypertarget{network_8h_source}{}\label{network_8h_source}\index{client/source/modules/network.h@{client/source/modules/network.h}}
+\doxymbox{\hyperlink{network_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NETWORK\_MANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NETWORK\_MANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }NetworkManager}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ NetworkManager(\textcolor{keyword}{const}\ std::string\ \&address,\ uint16\_t\ port);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \&getAddress();}
+\DoxyCodeLine{00027\ \ \ \ \ uint16\_t\ \&getPort();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ conn();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ auth(\textcolor{keyword}{const}\ std::string\ \&username,\ \textcolor{keyword}{const}\ std::string\ \&password);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ std::vector<uint64\_t>\ calc(\textcolor{keyword}{const}\ std::vector<std::vector<uint64\_t>>\ \&data);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ close();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ socket;}
+\DoxyCodeLine{00038\ \ \ \ \ std::string\ address;}
+\DoxyCodeLine{00039\ \ \ \ \ uint16\_t\ port;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NETWORK\_MANAGER\_H}}
+
+\end{DoxyCode}
